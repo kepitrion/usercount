@@ -4,7 +4,7 @@ const History = require("../../schemas/history");
 module.exports = {
     type: "macro",
     async format (param) {
-        if (param.toLowerCase() === "IP") return await User.countDocuments({
+        if (param.toLowerCase() === "ip") return await User.countDocuments({
             type: {
                 $eq: 0
             }
